@@ -2,7 +2,7 @@
 {% block content %}
 
 <h1>Contact Management</h1>
-<a type="button" href="{% url 'contact_create' %}">
+<a class="btn btn-primary" href="{% url 'contact_create' %}">
     Create a new contact
 </a>
 
@@ -18,13 +18,7 @@
         {% for contact in contact_list %}
         <tr>
             <td>
-                <!-- <a class="icon-link" href="{% url 'contact_detail' contact.pk %}">
-                    <i class="bi bi-pencil"></i> </a>
-                  &nbsp;
-          
-                  <a class="icon-link" href="{% url 'contact_delete' contact.pk %}">
-                    <i class="bi bi-trash"></i>
-                  </a> -->
+    
                   &nbsp;
                   {{ contact.name }}
             </td>

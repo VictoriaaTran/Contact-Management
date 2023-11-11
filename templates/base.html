@@ -10,20 +10,28 @@
   <!-- Option 1: Include in HTML -->
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  
+    
     <title>Contact Management</title>
+    <!-- load the static folder to access images -->
+    {% load static %}
 </head>
 <style>
     footer {
         text-align: center;
-
+        color:blue;
+        margin: 50px;
+        font-weight: bold;
+        font-size: large;
     }
     h1{
-   
         text-align: center;
         margin: 50px;
         color: blue;
  
+    }
+    img{
+        width: 10%;
+        border-radius: 50%;
     }
 </style>
 
@@ -34,6 +42,7 @@
 
         <footer>
             <p>&copy; Created by Victoria Tran</p>
+            <img src = "{% static 'images/cat.jpg' %}" alt="cute cat">
         </footer>
     </div>
 </body>
