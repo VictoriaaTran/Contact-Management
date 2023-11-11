@@ -1,9 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
+<style>
+    h1{
+        text-align: center;
+        margin: 50px;
+        color: blue;
+    }    
+</style>
+
 <h1>Contact Management</h1>
-<button type="button" a href="{% url 'contact_create' %}">
+<a type="button" href="{% url 'contact_create' %}">
     Create a new contact
-</button>
+</a>
 
 <table class="table table-striped">
     <thead>
