@@ -18,6 +18,13 @@
         {% for contact in contact_list %}
         <tr>
             <td>
+                <a class="icon-link" href="{% url 'contact_detail' task.pk %}">
+                    <i class="bi bi-pencil"></i> </a>
+                  &nbsp;
+          
+                  <a class="icon-link" href="{% url 'contact_delete' task.pk %}">
+                    <i class="bi bi-trash"></i>
+                  </a>
     
                   &nbsp;
                   {{ contact.name }}
