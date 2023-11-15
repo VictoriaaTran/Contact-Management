@@ -21,7 +21,9 @@ class ContactDetailView(DetailView):
 class ContactUpdateView(UpdateView):
     model = Contact
     form_class = ContactForm
+    template_name = 'contacts/contact_update.html'
     success_url = reverse_lazy('contact_list')
+
 
 class ContactDeleteView(DeleteView):
     model = Contact

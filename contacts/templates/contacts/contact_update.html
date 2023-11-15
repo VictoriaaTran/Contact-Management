@@ -1,0 +1,18 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Update Contact</h1>
+<form method="post">
+    <!-- generate cross reference -->
+    {% csrf_token %} 
+
+    <!-- treat different field as separate paragraph -->
+    {{ form.as_p}}
+    <input class="btn btn-primary" type="submit"/>
+
+    <!-- cancel button goes back to the homepage -->
+    <a class="btn btn-info" href="{% url 'contact_list' %}">Cancel</a>
+
+</form>
+{% endblock content %}
